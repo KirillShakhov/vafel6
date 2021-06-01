@@ -38,13 +38,7 @@ public class ShootingMethodMath {
             y.get(1).add((-(1 - h / 2 * p.solve(x.get(i))) * y.get(1).get(i - 1) - (Math.pow(h, 2) * q.solve(x.get(i)) - 2) * y.get(1).get(i))/ (1 + h / 2 * p.solve(x.get(i))));
         }
 
-//        for(ArrayList<Double> a : y){
-//            String res = "";
-//            for(Double d : a){
-//                res +=d + " : ";
-//            }
-//            System.out.println(res);
-//        }
+
         ArrayList<Double> y_res = new ArrayList<>();
         for(int i = 0; i <= n; i++){
             y_res.add(get_solv_y_i(y, y2, n, i));
@@ -52,8 +46,6 @@ public class ShootingMethodMath {
         for(Double e : y_res){
             System.out.println(e);
         }
-
-
         ArrayList<Point> points = new ArrayList<>();
         for(int i = 0; i < x.size(); i++){
             points.add(new Point(x.get(i), y_res.get(i)));

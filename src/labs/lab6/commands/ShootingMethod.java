@@ -16,15 +16,19 @@ public class ShootingMethod {
         ArrayList<IFuncX> ff = new ArrayList<>();
         System.out.println("Выберите уравнение:");
         // 1
-        System.out.println("1. y'' +  x^(-2) y' + x^3 y = e^x");
+        System.out.println("1. x^(-2) y' + x^3 y = e^x");
         fp.add(x -> Math.pow(x, -2));
         fq.add(x -> Math.pow(x, 3));
         ff.add(x -> Math.pow(Math.E, x));
         // 2
-        System.out.println("2. y'' + x^2 y' + 2y  = 2x - 1");
+        System.out.println("2. x^2 y' + 2y  = 2x - 1");
         fp.add(x -> Math.pow(x, 2));
         fq.add(x -> 2.0);
         ff.add(x -> 2 * x - 1);
+        System.out.println("3. y' = 3*e^x");
+        fp.add(x -> 1.0);
+        fq.add(x -> 1.0);
+        ff.add(x -> 3 * Math.pow(Math.E, x));
         //
         IFuncX p, g, f;
         while (true) {
