@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ShootingMethod {
-    public void execute() {
+    public static void execute() {
         Scanner scanner = new Scanner(System.in);
         ArrayList<IFuncX> fp = new ArrayList<>();
         ArrayList<IFuncX> fq = new ArrayList<>();
