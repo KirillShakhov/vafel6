@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="vafel5" />
+        <module name="vafel6" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="vafel5" target="8" />
+      <module name="vafel6" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
